@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="upper">
+            <h1>Contact Us</h1>
+            <form onsubmit="validateForm()">
+              <label for="firstName" id="firstName"
+                >First Name <span>*</span></label
+              >
+              <label for="lastName" id="lastName"
+                >Last Name <span>*</span></label
+              >
+              <div class="control">
+                <div class="firstLast">
+                  <input
+                    type="name"
+                    name="firstName"
+                    class="FirstName errr"
+                  /><br />
+                  <!-- <div class="error">hj</div> -->
+                  <input type="name" name="lastName" class="LastName errr" />
+                </div>
+                <div class="name_error">hj</div>
+                <div class="Error">hj</div>
+              </div>
+              <div class="control"></div>
+              <label for="email" id="emailAddress"
+                >Email Address <span>*</span></label
+              >
+              <div class="email">
+                <input type="email" name="email" class="EmailAddress errr" />
+              </div>
+              <div class="email_error">hj</div>
+              <div class="control">
+                <label for="" id="query"> Query Type <span>*</span></label>
+                <div class="query">
+                  <div tabindex="1" class="general eff">
+                    <input type="radio" id="general" onchange ="changeRadioBg()" name="query" />General
+                    Enquiry
+                  </div>
+                  <div tabindex="1" class="support eff">
+                    <input type="radio" id="support" onchange ="changeRadioBg()" name="query" />Support
+                    Request
+                  </div>
+                </div>
+                <div class="query_error">hj</div>
+              </div>
+            <div class="bottom">
+                <div class="control">
+                  <label for="message" id="msg">Message <span>*</span></label>
+                  <div class="message errr">
+                    <textarea
+                      id="comments"
+                      class="textarea errr"
+                      name="comments"
+                      i
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="msg_error">hj</div>
+                </div>
+                <div class="control">
+                  <div class="checkBox">
+                    <label>
+                      <input type="checkbox" name="checkBox" id="box" />
+                      I consent to being contacted by the team <span>*</span>
+                    </label>
+                  </div>
+                  <div class="check_error">hj</div>
+                </div>
+                <div class="btn">
+                  <button  onclick ='validateForm()' type ="button" id="subBtn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="success hide">
+          <div class="texImg">
+            <img
+              src="./assets/images/icon-success-check.svg"
+              alt="success-icon"
+            />
+            <h2>Message Sent!</h2>
+          </div>
+          <div class="info">
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+  
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  To submit this form, please consent to being contacted
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>-->
+    <script src="script.js"></script>
+  </body>
+</html>
